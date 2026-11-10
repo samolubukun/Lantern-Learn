@@ -1,0 +1,82 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Warm Store Glow -->
+    <radialGradient id="shopAura" cx="16" cy="16" r="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#FDE047" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Polished Gold / Brass Cart Metal -->
+    <linearGradient id="cartGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="30%" stop-color="#FDE047"/>
+      <stop offset="70%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Sleek Obsidian Wheel Gradient -->
+    <linearGradient id="wheelGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#64748B"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Glowing Coin in Cart -->
+    <linearGradient id="coinGold" x1="14" y1="6" x2="22" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="35%" stop-color="#FDE047"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <filter id="cartShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#0F172A" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Halo -->
+  <circle cx="16" cy="16" r="14" fill="url(#shopAura)"/>
+
+  <!-- Glowing Golden Coin Loaded in the Cart Basket -->
+  <g filter="url(#cartShadow)">
+    <circle cx="18" cy="11" r="5" fill="url(#coinGold)"/>
+    <circle cx="18" cy="11" r="3.6" stroke="#FFFBEB" stroke-width="0.8" fill="none"/>
+    <!-- Lantern Flame Insignia on Coin -->
+    <path d="M18 8.5 C19 9.8, 19.8 10.6, 19.3 11.8 C18.8 12.6, 18.2 13, 17.8 13 C17.4 13, 17 12.6, 16.5 11.8 C16 10.6, 17 9.8, 18 8.5 Z" fill="#B45309"/>
+  </g>
+
+  <!-- ============================================== -->
+  <!-- 3D SHOPPING CART SILHOUETTE                    -->
+  <!-- ============================================== -->
+  <g filter="url(#cartShadow)">
+    <!-- Cart Main Wire Frame: Handle -> Basket Floor -> Front Lip -> Top Rim -->
+    <path d="M4 6.5 H7.5 L10.5 19.5 H23.5 L27 8.5 H8.5" stroke="url(#cartGold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Handle Grip Rubber Sleeve -->
+    <line x1="3" y1="6.5" x2="6.5" y2="6.5" stroke="#B45309" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Basket Horizontal Wire Divider -->
+    <line x1="9.5" y1="14" x2="25.2" y2="14" stroke="url(#cartGold)" stroke-width="1.6" stroke-linecap="round"/>
+
+    <!-- Basket Vertical Wire Dividers -->
+    <line x1="14.5" y1="9.5" x2="14.5" y2="18.5" stroke="url(#cartGold)" stroke-width="1.4" opacity="0.85"/>
+    <line x1="19.5" y1="9.5" x2="19.5" y2="18.5" stroke="url(#cartGold)" stroke-width="1.4" opacity="0.85"/>
+
+    <!-- Under-Basket Wheel Chassis Mounts -->
+    <path d="M12 21.5 L13 24.5 H21 L22 21.5" stroke="url(#cartGold)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Front & Rear Rotating Wheels with Gold Hubs -->
+    <!-- Rear Wheel -->
+    <circle cx="13" cy="27" r="2.8" fill="url(#wheelGrad)" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="13" cy="27" r="1.1" fill="#FDE047"/>
+
+    <!-- Front Wheel -->
+    <circle cx="21" cy="27" r="2.8" fill="url(#wheelGrad)" stroke="#1E293B" stroke-width="1"/>
+    <circle cx="21" cy="27" r="1.1" fill="#FDE047"/>
+  </g>
+
+  <!-- Sparkle Stars Bursting from Purchase -->
+  <path d="M26 4 L27 6 L29 7 L27 8 L26 10 L25 8 L23 7 L25 6 Z" fill="#FDE047"/>
+  <circle cx="6" cy="12" r="1.2" fill="#FBBF24"/>
+</svg>

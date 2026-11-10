@@ -1,0 +1,72 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radiant Pro Gold Aura -->
+    <radialGradient id="proAura" cx="16" cy="16" r="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.75"/>
+      <stop offset="45%" stop-color="#FDE047" stop-opacity="0.35"/>
+      <stop offset="75%" stop-color="#F59E0B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Polished 3D Sculpted Gold Gradient -->
+    <linearGradient id="goldInfinity" x1="4" y1="11" x2="28" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFBEB"/>
+      <stop offset="25%" stop-color="#FDE047"/>
+      <stop offset="60%" stop-color="#F59E0B"/>
+      <stop offset="85%" stop-color="#D97706"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Front Overlapping Ribbon Segment -->
+    <linearGradient id="frontLoop" x1="12" y1="12" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FDE047"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <filter id="proShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="1.5" flood-color="#78350F" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Halo -->
+  <circle cx="16" cy="16" r="14" fill="url(#proAura)"/>
+
+  <!-- ============================================== -->
+  <!-- PERFECT CONTINUOUS INFINITY SYMBOL (∞)         -->
+  <!-- ============================================== -->
+  <g filter="url(#proShadow)">
+    <!-- Base Infinity Path: Left Loop & Right Loop seamlessly connected -->
+    <path d="M 16 16 C 20 11.5, 26 11, 27.5 16 C 29 21, 22 21.5, 16 16 C 10 10.5, 4 11, 2.5 16 C 1 21, 8 21.5, 16 16 Z" 
+          stroke="url(#goldInfinity)" 
+          stroke-width="4.2" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" 
+          fill="none"/>
+
+    <!-- 3D Overpass: Clean ribbon twist over the center intersection -->
+    <path d="M 12 12.2 C 13.6 13.8, 15 15, 16 16 C 17 17, 18.4 18.2, 20 19.8" 
+          stroke="url(#frontLoop)" 
+          stroke-width="4.4" 
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- Left Outer Loop Specular Reflection -->
+  <path d="M 6.5 13 C 4.5 14, 3.8 15.2, 3.8 16" 
+        stroke="#FFFFFF" 
+        stroke-width="1.4" 
+        stroke-linecap="round" 
+        opacity="0.9"/>
+
+  <!-- Right Outer Loop Specular Reflection -->
+  <path d="M 23.5 13 C 26 13.8, 27.2 15, 27.2 16" 
+        stroke="#FFFFFF" 
+        stroke-width="1.4" 
+        stroke-linecap="round" 
+        opacity="0.9"/>
+
+  <!-- Sparkle Stars -->
+  <path d="M 6 7 L 7 9 L 9 10 L 7 11 L 6 13 L 5 11 L 3 10 L 5 9 Z" fill="#FDE047"/>
+  <circle cx="27" cy="23" r="1.3" fill="#FBBF24"/>
+</svg>

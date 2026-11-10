@@ -1,0 +1,45 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Radiant Ruby Glow -->
+    <radialGradient id="rubyGlow" cx="16" cy="14" r="14" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDA4AF" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#E11D48" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 3D Heart Gradient -->
+    <linearGradient id="heartBody" x1="16" y1="4" x2="16" y2="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF4B72"/>
+      <stop offset="40%" stop-color="#E11D48"/>
+      <stop offset="85%" stop-color="#BE123C"/>
+      <stop offset="100%" stop-color="#881337"/>
+    </linearGradient>
+
+    <!-- Bevel / Facet Highlight -->
+    <linearGradient id="heartBevel" x1="8" y1="4" x2="24" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE4E6" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#FDA4AF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#E11D48" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="heartShadow" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#881337" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Pink Glow -->
+  <circle cx="16" cy="15" r="14" fill="url(#rubyGlow)"/>
+
+  <!-- Main 3D Gem Heart Shape -->
+  <path filter="url(#heartShadow)" d="M16 27.5 C15.2 27.5, 4 19.8, 4 11.5 C4 6.8, 7.8 3.5, 12.2 3.5 C14 3.5, 15.2 4.3, 16 5.2 C16.8 4.3, 18 3.5, 19.8 3.5 C24.2 3.5, 28 6.8, 28 11.5 C28 19.8, 16.8 27.5, 16 27.5 Z" fill="url(#heartBody)"/>
+
+  <!-- Left Glossy Glass Reflection Highlight -->
+  <path d="M12.2 5 C8.8 5, 5.8 7.5, 5.8 11.5 C5.8 16.5, 12.5 22.5, 16 25.5 C15.4 22 13.5 17.5 11.5 14 C10 11.5 9 8.5 12.2 5 Z" fill="url(#heartBevel)"/>
+
+  <!-- Upper Left Gleam Dot -->
+  <ellipse cx="10" cy="9.5" rx="2.5" ry="1.6" transform="rotate(-30 10 9.5)" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="7.5" cy="13" r="1" fill="#FFFFFF" opacity="0.6"/>
+
+  <!-- Bottom Crest Shadow / Rim -->
+  <path d="M16 26.5 C16.5 26.1, 26.5 19, 26.5 11.5 C26.5 11.2, 26.5 10.9, 26.4 10.6 C26 18, 16.5 25.5, 16 26.5 Z" fill="#4C0519" opacity="0.4"/>
+</svg>

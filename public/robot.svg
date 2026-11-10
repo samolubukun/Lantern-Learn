@@ -1,0 +1,129 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Tech Glow -->
+    <radialGradient id="robotAura" cx="60" cy="62" r="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#0284C7" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Metallic Titanium Head Chassis -->
+    <linearGradient id="chassisGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="25%" stop-color="#E2E8F0"/>
+      <stop offset="70%" stop-color="#94A3B8"/>
+      <stop offset="100%" stop-color="#64748B"/>
+    </linearGradient>
+
+    <!-- Obsidian Visor Screen -->
+    <linearGradient id="visorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="50%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Glowing Cyan Optics -->
+    <radialGradient id="eyeGlow" cx="0" cy="0" r="1" gradientTransform="scale(10)" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#38BDF8"/>
+      <stop offset="80%" stop-color="#0284C7"/>
+      <stop offset="100%" stop-color="#0369A1"/>
+    </radialGradient>
+
+    <!-- Golden Antenna Spark -->
+    <radialGradient id="antennaGlow" cx="60" cy="12" r="6" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#FDE047"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </radialGradient>
+
+    <filter id="robotShadow" x="-10%" y="-10%" width="120%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0F172A" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Ambient Light Halo -->
+  <circle cx="60" cy="62" r="50" fill="url(#robotAura)"/>
+
+  <!-- ============================================== -->
+  <!-- TOP ANTENNA BEACON                             -->
+  <!-- ============================================== -->
+  <rect x="58" y="16" width="4" height="15" rx="2" fill="#64748B"/>
+  <circle cx="60" cy="12" r="6" fill="url(#antennaGlow)"/>
+  <circle cx="60" cy="12" r="2.5" fill="#FFFFFF"/>
+  <!-- Broadcast Signal Arcs -->
+  <path d="M52 8 C56 5, 64 5, 68 8" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.8"/>
+  <path d="M47 4 C54 0, 66 0, 73 4" stroke="#38BDF8" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.5"/>
+
+  <!-- ============================================== -->
+  <!-- SIDE EAR AUDIO SENSORS                         -->
+  <!-- ============================================== -->
+  <!-- Left Ear Sensor -->
+  <rect x="14" y="50" width="8" height="24" rx="4" fill="#475569" filter="url(#robotShadow)"/>
+  <rect x="16" y="54" width="4" height="16" rx="2" fill="#38BDF8"/>
+  <circle cx="18" cy="62" r="1.5" fill="#FFFFFF"/>
+
+  <!-- Right Ear Sensor -->
+  <rect x="98" y="50" width="8" height="24" rx="4" fill="#475569" filter="url(#robotShadow)"/>
+  <rect x="100" y="54" width="4" height="16" rx="2" fill="#38BDF8"/>
+  <circle cx="102" cy="62" r="1.5" fill="#FFFFFF"/>
+
+  <!-- ============================================== -->
+  <!-- ROBOT HEAD CHASSIS                             -->
+  <!-- ============================================== -->
+  <rect x="20" y="28" width="80" height="68" rx="22" fill="url(#chassisGrad)" stroke="#CBD5E1" stroke-width="2.5" filter="url(#robotShadow)"/>
+
+  <!-- Forehead Accent Seam -->
+  <path d="M38 28 L44 35 L76 35 L82 28" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+
+  <!-- ============================================== -->
+  <!-- OBSIDIAN VISOR SCREEN                          -->
+  <!-- ============================================== -->
+  <rect x="28" y="42" width="64" height="38" rx="14" fill="url(#visorGrad)" stroke="#334155" stroke-width="1.8"/>
+
+  <!-- Visor Top Glass Specular Reflection Highlight -->
+  <path d="M32 45 C42 43, 78 43, 88 45" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+
+  <!-- ============================================== -->
+  <!-- INTELLIGENT GLOWING EYES                       -->
+  <!-- ============================================== -->
+  <!-- Left Eye -->
+  <g transform="translate(44, 59)">
+    <circle cx="0" cy="0" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="0" cy="0" r="10" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FFFFFF"/>
+    <!-- Specular Pupil Sparkle -->
+    <circle cx="2" cy="-2" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Right Eye -->
+  <g transform="translate(76, 59)">
+    <circle cx="0" cy="0" r="8" fill="url(#eyeGlow)"/>
+    <circle cx="0" cy="0" r="10" stroke="#38BDF8" stroke-width="1" stroke-dasharray="2 3" opacity="0.8"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FFFFFF"/>
+    <!-- Specular Pupil Sparkle -->
+    <circle cx="2" cy="-2" r="1.5" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Cheerful LED Smile / Digital Mouth -->
+  <path d="M52 72 Q60 77 68 72" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Cheek LED Status Indicators -->
+  <circle cx="34" cy="68" r="1.8" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="86" cy="68" r="1.8" fill="#F59E0B" opacity="0.8"/>
+
+  <!-- ============================================== -->
+  <!-- NECK & COLLAR                                  -->
+  <!-- ============================================== -->
+  <!-- Neck Joints -->
+  <rect x="46" y="96" width="28" height="8" rx="2" fill="#334155"/>
+  <line x1="53" y1="96" x2="53" y2="104" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="60" y1="96" x2="60" y2="104" stroke="#64748B" stroke-width="1.5"/>
+  <line x1="67" y1="96" x2="67" y2="104" stroke="#64748B" stroke-width="1.5"/>
+
+  <!-- Shoulder Plate Top -->
+  <path d="M30 104 C30 102, 42 102, 60 102 C78 102, 90 102, 90 104 L96 112 L24 112 Z" fill="url(#chassisGrad)" stroke="#CBD5E1" stroke-width="1.5"/>
+  <!-- Status Power Light on Collar -->
+  <circle cx="60" cy="107" r="2" fill="#38BDF8"/>
+</svg>

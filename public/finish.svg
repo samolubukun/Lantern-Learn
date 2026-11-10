@@ -1,0 +1,92 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Brilliant Sunburst Halo (Zero Green) -->
+    <radialGradient id="winAura" cx="50" cy="52" r="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.85"/>
+      <stop offset="40%" stop-color="#FDE047" stop-opacity="0.45"/>
+      <stop offset="70%" stop-color="#F59E0B" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Polished Champion Gold -->
+    <linearGradient id="championGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FEF08A"/>
+      <stop offset="50%" stop-color="#FDE047"/>
+      <stop offset="80%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#B45309"/>
+    </linearGradient>
+
+    <!-- Sleek Obsidian Accent Metal (Zero Green) -->
+    <linearGradient id="obsidianMetal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="45%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Blazing Core Flame -->
+    <linearGradient id="blazeFlame" x1="50" y1="34" x2="50" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FEF08A"/>
+      <stop offset="55%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Radiant Light Burst -->
+  <circle cx="50" cy="52" r="46" fill="url(#winAura)"/>
+
+  <!-- Radial Golden Sunbeams -->
+  <g stroke="#FDE047" stroke-width="1.8" stroke-linecap="round" opacity="0.7">
+    <line x1="50" y1="4" x2="50" y2="9"/>
+    <line x1="16" y1="18" x2="20" y2="21"/>
+    <line x1="84" y1="18" x2="80" y2="21"/>
+    <line x1="6" y1="52" x2="11" y2="52"/>
+    <line x1="94" y1="52" x2="89" y2="52"/>
+  </g>
+
+  <!-- Overhead Golden Handle -->
+  <path d="M34 22 C34 9, 66 9, 66 22" stroke="url(#championGold)" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="34" cy="22" r="2.2" fill="url(#championGold)"/>
+  <circle cx="66" cy="22" r="2.2" fill="url(#championGold)"/>
+
+  <!-- Top Finial Ring -->
+  <circle cx="50" cy="14" r="5" stroke="url(#championGold)" stroke-width="2.5" fill="none"/>
+
+  <!-- Golden Chimney Cap -->
+  <path d="M42 22 L45 17 L55 17 L58 22 Z" fill="url(#championGold)"/>
+  <rect x="47" y="19" width="2" height="1.5" rx="0.5" fill="#78350F" opacity="0.8"/>
+  <rect x="51" y="19" width="2" height="1.5" rx="0.5" fill="#78350F" opacity="0.8"/>
+
+  <!-- Upper Obsidian & Gold Hood -->
+  <path d="M26 31 C28 24, 38 21, 50 21 C62 21, 72 24, 74 31 Z" fill="url(#obsidianMetal)"/>
+  <rect x="24" y="30.5" width="52" height="4" rx="2" fill="url(#championGold)"/>
+
+  <!-- Crystal Glass Mantle -->
+  <rect x="28" y="34" width="44" height="40" rx="9" fill="#FFFBEB" stroke="url(#championGold)" stroke-width="2.5"/>
+
+  <!-- Vertical Cage Struts -->
+  <line x1="38" y1="34" x2="38" y2="74" stroke="url(#championGold)" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="62" y1="34" x2="62" y2="74" stroke="url(#championGold)" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Blazing Victorious Flame Inside -->
+  <rect x="45" y="65" width="10" height="4" rx="1.5" fill="url(#championGold)"/>
+  <path d="M50 36 C55 42, 63 48, 62 58 C61 65, 55 68, 50 68 C45 68, 39 65, 38 58 C37 48, 45 42, 50 36 Z" fill="url(#blazeFlame)"/>
+  <ellipse cx="50" cy="58" rx="5" ry="7" fill="#FFFFFF"/>
+
+  <!-- Lower Collar -->
+  <rect x="24" y="73.5" width="52" height="4" rx="2" fill="url(#championGold)"/>
+
+  <!-- Base (Obsidian & Gold) -->
+  <path d="M22 84 L26 77 L74 77 L78 84 Z" fill="url(#obsidianMetal)"/>
+  <rect x="20" y="83" width="60" height="5" rx="2.5" fill="url(#championGold)"/>
+  <rect x="24" y="87" width="52" height="3" rx="1.5" fill="#0F172A"/>
+
+  <!-- Celebration Confetti & Sparkles (Zero Green) -->
+  <circle cx="16" cy="34" r="2" fill="#EF4444"/>
+  <circle cx="86" cy="30" r="2" fill="#38BDF8"/>
+  <rect x="14" y="66" width="3" height="3" rx="1" fill="#A855F7" transform="rotate(25 14 66)"/>
+  <rect x="84" y="68" width="3" height="3" rx="1" fill="#F59E0B" transform="rotate(-15 84 68)"/>
+  <path d="M88 44 L90 48 L94 50 L90 52 L88 56 L86 52 L82 50 L86 48 Z" fill="#FDE047"/>
+  <path d="M12 48 L13.5 51 L16 52.5 L13.5 54 L12 57 L10.5 54 L8 52.5 L10.5 51 Z" fill="#FDE047"/>
+</svg>
