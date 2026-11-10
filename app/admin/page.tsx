@@ -440,14 +440,14 @@ export default function AdminPage() {
               </span>
               <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 flex items-center gap-x-1">
                 <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span>Live Convex Realtime</span>
+                <span>Live Realtime Sync</span>
               </span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white tracking-tight">
               Curriculum, Platform & Learner Operations
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-2xl leading-relaxed">
-              Manage courses, structured units, multi-modal lessons, practice challenges, and learner accounts from a unified Lantern control plane.
+              Manage courses, structured units, multi-modal lessons, practice challenges, and learner accounts from a unified Lantern admin control panel.
             </p>
           </div>
 

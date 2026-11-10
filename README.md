@@ -46,7 +46,7 @@ Lantern is a modern, domain-agnostic Learning Experience Platform (LMS / LXP) en
   - *Cloud Architecture & High Scalability* (CAP Theorem, Raft Consensus, Resilient Queues)
   - *UI/UX Product Design & Systems* (8pt Grid, Design Tokens, WCAG AA Accessibility)
   - *(Easily create custom courses for any domain via the Admin Studio or API)*
-- **Administrative Control Plane (`/admin`)**: Built-in curriculum authoring studio to create, update, and manage custom courses, modules, lessons, and challenge question banks for any field of study.
+- **Admin Control Panel (`/admin`)**: Built-in curriculum authoring studio to create, update, and manage custom courses, modules, lessons, and challenge question banks for any field of study.
 - **Personal Study Notebook (`/notebook`)**: Cloud-synced learner notebook auto-saving takeaways, notes, and reflections per lesson directly to Convex.
 - **Zero-Clerk Native Authentication**: In-database email and password authentication stored in Convex (`users` & `sessions`) with SHA-256 password hashing + 16-byte random salt, zero external auth provider lock-in, and humanized error handling.
 - **Gamification & Retention Engine**:
@@ -213,7 +213,7 @@ A visual walkthrough of the Lantern platform across learner workflows and admini
     <td width="50%" valign="top" colspan="2">
       <img src="./public/screenshots/07-admin-studio.jpg" alt="Admin Management Studio" width="100%" />
       <br /><br />
-      <b>07. Admin Management Studio & Control Plane (<code>/admin</code>)</b><br />
+      <b>07. Admin Management Studio & Control Panel (<code>/admin</code>)</b><br />
       <sub>Unified platform operations hub with high-level KPIs, visual curriculum hierarchy tree builder, interactive quiz question bank, and learner role management.</sub>
     </td>
   </tr>
