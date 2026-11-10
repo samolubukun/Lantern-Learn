@@ -6,9 +6,9 @@
 
 # Lantern
 ### Illuminate Your Path, Master Any Skill.
-#### The modern, multi-modal learning experience platform (LMS / LXP) engineered for deep retention.
+#### The modern, domain-agnostic learning experience platform (LMS / LXP) engineered for deep retention.
 
-Interactive technical learning platform featuring bite-sized daily challenges, multi-modal lessons (interactive quizzes, embedded video masterclasses, rich markdown architecture guides), personal study notebooks, self-paced multi-domain tracks, streak gamification, and native credit-based economy.
+A universal, gamified learning platform featuring bite-sized daily challenges, multi-modal lessons (interactive quizzes, embedded video masterclasses, rich markdown study guides), personal cloud notebooks, streak momentum, a native credit-based economy, and a full administrative studio to author curricula in **any field or discipline**.
 
 <br />
 
@@ -32,20 +32,22 @@ Interactive technical learning platform featuring bite-sized daily challenges, m
 
 ## Overview
 
-Lantern is a modern, self-paced Learning Experience Platform (LMS / LXP) designed to make technical and professional learning engaging, durable, and self-directed:
+Lantern is a modern, domain-agnostic Learning Experience Platform (LMS / LXP) engineered to make learning in **any discipline** engaging, durable, and self-directed. While it ships with a pre-configured seed catalog of 5 technology and venture tracks to showcase its capabilities out-of-the-box, the underlying architecture is universally designed to host courses on **any topic**—from languages, law, and medical sciences to test prep, arts, and executive training:
 
-- **Unified Command Dashboard (`/dashboard`)**: Instant high-level learner command center displaying real-time streak momentum, knowledge score (XP), focus energy (hearts), and credit balance, alongside an active course progress tracker, "Up Next" lesson launcher, and 1-click track switcher.
+- **Unified Command Dashboard (`/dashboard`)**: Instant high-level learner command center displaying real-time streak momentum, knowledge score (XP), focus energy (hearts), and credit balance, alongside an active course progress tracker, "Up Next" lesson launcher, and 1-click course switcher.
 - **Multi-Modal Learning Formats**:
   - **Interactive Knowledge Checks**: Bite-sized, gamified multiple-choice challenges with instant evaluation, audio SFX, and numbered keyboard shortcuts (`1`, `2`, `3`).
-  - **Architecture Deep Dives**: Rich markdown guides with syntax-highlighted code blocks, one-click code copying, and downloadable external resources.
+  - **Deep-Dive Reading Guides**: Rich markdown lessons with syntax-highlighted code blocks, tables, one-click copying, and downloadable external resources.
   - **Video Masterclasses**: Responsive embedded video lectures (YouTube, Vimeo, or direct MP4/WebM) with integrated completion tracking.
-- **Curated Multi-Domain Curriculum (Seeded Demo of 5 Core Tracks)**:
+- **Universal Curriculum Architecture (Seeded Reference Demo)**:
   - *Full-Stack React 19 & Next.js App Router* (Server Primitives, Streaming SSR, Optimistic UI)
   - *AI & Applied LLM Engineering* (Structured Outputs, RAG, Tool Calling, Vector Search)
   - *Tech Startup Strategy & SaaS Finance* (Unit Economics, CAC Payback, Term Sheets & SAFEs)
   - *Cloud Architecture & High Scalability* (CAP Theorem, Raft Consensus, Resilient Queues)
   - *UI/UX Product Design & Systems* (8pt Grid, Design Tokens, WCAG AA Accessibility)
-- **Personal Study Notebook (`/notebook`)**: Cloud-synced learner notebook auto-saving takeaways, code snippets, and reflections per lesson directly to Convex.
+  - *(Easily create custom courses for any domain via the Admin Studio or API)*
+- **Administrative Control Plane (`/admin`)**: Built-in curriculum authoring studio to create, update, and manage custom courses, modules, lessons, and challenge question banks for any field of study.
+- **Personal Study Notebook (`/notebook`)**: Cloud-synced learner notebook auto-saving takeaways, notes, and reflections per lesson directly to Convex.
 - **Zero-Clerk Native Authentication**: In-database email and password authentication stored in Convex (`users` & `sessions`) with SHA-256 password hashing + 16-byte random salt, zero external auth provider lock-in, and humanized error handling.
 - **Gamification & Retention Engine**:
   - Focus energy system (5 hearts) with practice review mode to regenerate energy.
@@ -55,9 +57,9 @@ Lantern is a modern, self-paced Learning Experience Platform (LMS / LXP) designe
 
 ---
 
-## Curriculum Tracks & Learning Domains(Seed Demo)
+## Universal Curriculum Architecture & Seed Showcase
 
-Lantern features 5 comprehensive multi-modal technical tracks, seeded with interactive modules, markdown architecture guides, and knowledge check challenges:
+Lantern is completely domain-agnostic. Educators, organizations, and platform admins can author, structure, and publish courses on **practically any subject or skill**. To demonstrate the full breadth of the multi-modal lesson engine upon initial installation, Lantern includes 5 comprehensive reference tracks:
 
 <table>
   <tr>
@@ -113,7 +115,7 @@ flowchart TD
 
     subgraph Tier3 ["3. Core LMS & Progression Engine"]
         direction TB
-        ModulesEngine["Curriculum & Content Engine<br/>• Courses, Modules, Lessons, Challenges<br/>• Multi-Track Catalog (Engineering, AI, Cloud, Business, Design)"]
+        ModulesEngine["Curriculum & Content Engine<br/>• Courses, Modules, Lessons, Challenges<br/>• Universal Course Catalog (Any Discipline)"]
         GamificationEngine["Gamification & Retention Engine<br/>• Hearts Economy (5 Max) & Practice Recovery<br/>• XP Points & Daily Streaks • Reactive Leaderboards"]
         NotebookEngine["Personal Study Notebook Engine (`convex/notes.ts`)<br/>• Real-Time Cloud Notes per Lesson • Markdown Storage"]
         EconomyEngine["Credit & Billing Engine (`convex/credits.ts`)<br/>• 100 Welcome Starter Credits • Refills & Pro Unlock"]
@@ -155,7 +157,7 @@ flowchart TD
 ### Architectural Highlights
 1. **Zero External Auth Vendor Lock-In**: Complete replacement of third-party auth (Clerk) with an in-database salted SHA-256 cryptographic engine stored inside Convex (`users` and `sessions` tables).
 2. **Live WebSocket State Sync**: All course progress, XP tallies, heart decrements, notes, and leaderboards update in real time with zero client polling.
-3. **Multi-Modal Content Ingestion**: Supports interactive quiz challenges (`SELECT`, `ASSIST`), rich markdown articles with syntax highlighting, and responsive video players across all 5 tracks.
+3. **Multi-Modal Content Ingestion**: Supports interactive quiz challenges (`SELECT`, `ASSIST`), rich markdown articles with syntax highlighting, and responsive video players across any created course.
 4. **Pluggable Payment Engine**: Runs smoothly on internal credit tokens (100 welcome credits granted on signup) with optional Stripe checkout adapter.
 
 ---
@@ -184,7 +186,7 @@ A visual walkthrough of the Lantern platform across learner workflows and admini
       <img src="./public/screenshots/03-course-catalog.jpg" alt="Course Catalog & Tracks" width="100%" />
       <br /><br />
       <b>03. Multi-Domain Course Catalog (<code>/courses</code>)</b><br />
-      <sub>Searchable curriculum library spanning Engineering, Applied AI, SaaS Business, Cloud, and UX Design with level filters and instant enrollment.</sub>
+      <sub>Searchable curriculum library displaying all active courses with level filters and instant enrollment (pre-loaded with 5 reference tracks).</sub>
     </td>
     <td width="50%" valign="top">
       <img src="./public/screenshots/04-curriculum-learning.jpg" alt="Curriculum Syllabus & Roadmap" width="100%" />
@@ -356,5 +358,5 @@ lantern/
 
 
 <p align="center">
-  <sub>Lantern — Illuminate Your Path, Master Any Skill. Built for deep retention and self-paced technical mastery.</sub>
+  <sub>Lantern — Illuminate Your Path, Master Any Skill. A universal, gamified learning platform built for deep retention and self-paced mastery across any discipline.</sub>
 </p>
