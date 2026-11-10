@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgNinja" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48" />
+      <stop offset="100%" stop-color="#881337" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgNinja)" />
+  <!-- Shoulders & Gi -->
+  <path d="M28 112 C28 92 40 84 60 84 C80 84 92 92 92 112 Z" fill="#09090B" />
+  <polygon points="60,84 50,102 70,102" fill="#BE123C" />
+  <!-- Head Mask Hood -->
+  <circle cx="60" cy="58" r="26" fill="#09090B" />
+  <!-- Eye Opening -->
+  <path d="M42 54 Q60 52 78 54 Q60 66 42 54 Z" fill="#FED7AA" />
+  <!-- Glowing Amber Ninja Eyes -->
+  <ellipse cx="52" cy="56" rx="3.5" ry="2" fill="#F59E0B" />
+  <circle cx="52" cy="56" r="1.2" fill="#FFFFFF" />
+  <ellipse cx="68" cy="56" rx="3.5" ry="2" fill="#F59E0B" />
+  <circle cx="68" cy="56" r="1.2" fill="#FFFFFF" />
+  <!-- Headband / Forehead Plate -->
+  <rect x="44" y="38" width="32" height="8" rx="2" fill="#52525B" />
+  <circle cx="60" cy="42" r="2.5" fill="#E4E4E7" />
+  <!-- Headband Straps / Tails -->
+  <path d="M76 42 Q86 46 94 42" stroke="#E11D48" stroke-width="3" fill="none" stroke-linecap="round" />
+  <path d="M76 44 Q88 52 92 56" stroke="#E11D48" stroke-width="3" fill="none" stroke-linecap="round" />
+</svg>
+

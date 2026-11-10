@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgDesign" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgDesign)" />
+  <!-- Minimalist Torso -->
+  <path d="M30 112 C30 92 42 86 60 86 C78 86 90 92 90 112 Z" fill="#FFFFFF" />
+  <!-- Head -->
+  <ellipse cx="60" cy="58" rx="20" ry="22" fill="#FED7AA" />
+  <!-- Trendy Round Frames -->
+  <circle cx="51" cy="56" r="8" fill="none" stroke="#EC4899" stroke-width="2.5" />
+  <circle cx="69" cy="56" r="8" fill="none" stroke="#8B5CF6" stroke-width="2.5" />
+  <line x1="59" y1="56" x2="61" y2="56" stroke="#0F172A" stroke-width="2" />
+  <circle cx="51" cy="56" r="2.5" fill="#0F172A" />
+  <circle cx="69" cy="56" r="2.5" fill="#0F172A" />
+  <!-- Hair: Creative Asymmetric / Beret -->
+  <path d="M38 52 C36 32 64 30 82 42 C82 50 78 54 74 54 C66 46 54 48 44 54 Z" fill="#0F172A" />
+  <circle cx="48" cy="32" r="3" fill="#EC4899" />
+  <!-- Smile -->
+  <path d="M55 70 Q60 74 65 70" stroke="#0F172A" stroke-width="2" stroke-linecap="round" fill="none" />
+</svg>
+

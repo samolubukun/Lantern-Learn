@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgAstro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#1E293B" />
+    </linearGradient>
+    <linearGradient id="visorAstro" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#EF4444" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgAstro)" />
+  <!-- Stars in background -->
+  <circle cx="25" cy="25" r="1.5" fill="#FFFFFF" opacity="0.8" />
+  <circle cx="95" cy="30" r="1.5" fill="#FFFFFF" opacity="0.8" />
+  <circle cx="85" cy="85" r="1" fill="#FFFFFF" opacity="0.6" />
+  <circle cx="30" cy="90" r="1" fill="#FFFFFF" opacity="0.6" />
+  <!-- Space Suit Torso -->
+  <path d="M26 112 C26 90 40 82 60 82 C80 82 94 90 94 112 Z" fill="#F8FAFC" />
+  <rect x="48" y="90" width="24" height="16" rx="4" fill="#0EA5E9" />
+  <circle cx="54" cy="98" r="2.5" fill="#FFFFFF" />
+  <circle cx="62" cy="98" r="2" fill="#FDE047" />
+  <circle cx="67" cy="98" r="2" fill="#10B981" />
+  <!-- Helmet Outer -->
+  <circle cx="60" cy="54" r="27" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="2" />
+  <!-- Helmet Ear Latches -->
+  <rect x="30" y="50" width="6" height="10" rx="3" fill="#64748B" />
+  <rect x="84" y="50" width="6" height="10" rx="3" fill="#64748B" />
+  <!-- Helmet Visor -->
+  <ellipse cx="60" cy="54" rx="20" ry="17" fill="url(#visorAstro)" />
+  <ellipse cx="54" cy="48" rx="6" ry="3" fill="#FFFFFF" opacity="0.5" />
+</svg>
+

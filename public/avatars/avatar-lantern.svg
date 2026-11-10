@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgLantern" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <radialGradient id="glowLantern" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FEF08A" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgLantern)" />
+  <circle cx="60" cy="60" r="42" fill="url(#glowLantern)" />
+  <!-- Beacon Base & Glass -->
+  <path d="M40 78 L80 78 L74 46 L46 46 Z" fill="#0F172A" opacity="0.9" rx="4" />
+  <path d="M46 48 L74 48 L71 74 L49 74 Z" fill="#FEF08A" opacity="0.95" />
+  <!-- Flame Core -->
+  <path d="M60 52 C54 58 52 64 56 70 C58 72 62 72 64 70 C68 64 66 58 60 52 Z" fill="#F97316" />
+  <circle cx="60" cy="65" r="4" fill="#FFFFFF" />
+  <!-- Roof Cap -->
+  <polygon points="60,30 38,46 82,46" fill="#0F172A" />
+  <circle cx="60" cy="28" r="4" fill="#F59E0B" stroke="#0F172A" stroke-width="2" />
+  <!-- Base Stand -->
+  <rect x="42" y="78" width="36" height="8" rx="3" fill="#0F172A" />
+</svg>
+

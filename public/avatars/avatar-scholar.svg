@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgScholar" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgScholar)" />
+  <!-- Shoulders & Coat -->
+  <path d="M30 110 C30 92 42 86 60 86 C78 86 90 92 90 110 Z" fill="#0F172A" />
+  <polygon points="60,86 52,98 68,98" fill="#F8FAFC" />
+  <polygon points="60,94 56,108 64,108" fill="#F59E0B" />
+  <!-- Head -->
+  <ellipse cx="60" cy="62" rx="20" ry="22" fill="#FDE047" />
+  <!-- Glasses -->
+  <circle cx="51" cy="61" r="7" fill="none" stroke="#0F172A" stroke-width="2.5" />
+  <circle cx="69" cy="61" r="7" fill="none" stroke="#0F172A" stroke-width="2.5" />
+  <line x1="58" y1="61" x2="62" y2="61" stroke="#0F172A" stroke-width="2.5" />
+  <circle cx="51" cy="61" r="2.5" fill="#0F172A" />
+  <circle cx="69" cy="61" r="2.5" fill="#0F172A" />
+  <!-- Smile -->
+  <path d="M55 74 Q60 78 65 74" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round" fill="none" />
+  <!-- Mortarboard Cap -->
+  <polygon points="60,32 94,44 60,54 26,44" fill="#0F172A" />
+  <path d="M36 48 L36 58 C36 64 84 64 84 58 L84 48 Z" fill="#1E293B" />
+  <circle cx="60" cy="43" r="3" fill="#F59E0B" />
+  <!-- Tassel -->
+  <path d="M60 43 Q80 44 86 54 L86 64" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round" />
+  <circle cx="86" cy="65" r="2.5" fill="#F59E0B" />
+</svg>
+

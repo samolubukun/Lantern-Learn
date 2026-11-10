@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bgWizard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#5B21B6" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="32" fill="url(#bgWizard)" />
+  <!-- Robe -->
+  <path d="M28 112 C28 92 40 84 60 84 C80 84 92 92 92 112 Z" fill="#2E1065" />
+  <circle cx="60" cy="94" r="3" fill="#FDE047" />
+  <circle cx="60" cy="104" r="3" fill="#FDE047" />
+  <!-- Head -->
+  <ellipse cx="60" cy="62" rx="19" ry="20" fill="#FED7AA" />
+  <!-- Eyes -->
+  <circle cx="53" cy="60" r="2.5" fill="#2E1065" />
+  <circle cx="67" cy="60" r="2.5" fill="#2E1065" />
+  <!-- Sage Beard -->
+  <path d="M46 66 C46 88 74 88 74 66 Q60 74 46 66 Z" fill="#F8FAFC" />
+  <!-- Wizard Hat Brim -->
+  <ellipse cx="60" cy="48" rx="34" ry="8" fill="#4C1D95" />
+  <!-- Wizard Hat Cone -->
+  <path d="M40 46 L60 16 L76 46 Z" fill="#5B21B6" />
+  <path d="M40 46 Q60 40 76 46 Z" fill="#6D28D9" />
+  <!-- Star on Hat -->
+  <polygon points="60,28 62,33 67,33 63,36 65,41 60,38 55,41 57,36 53,33 58,33" fill="#FDE047" />
+  <!-- Sparkles -->
+  <circle cx="86" cy="30" r="2" fill="#FDE047" opacity="0.9" />
+  <circle cx="28" cy="40" r="2" fill="#FDE047" opacity="0.9" />
+</svg>
+
