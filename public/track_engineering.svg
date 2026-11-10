@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" fill="none">
+  <defs>
+    <linearGradient id="bg-eng" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="60%" stop-color="#022c22" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="border-eng" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="glow-eng" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#059669" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="gold-spark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="shadow-eng" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#022c22" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Base Badge Card -->
+  <rect x="10" y="8" width="100" height="74" rx="14" fill="url(#bg-eng)" stroke="url(#border-eng)" stroke-width="2" filter="url(#shadow-eng)" />
+  <rect x="11" y="9" width="98" height="30" rx="13" fill="url(#glow-eng)" opacity="0.3" />
+
+  <!-- Code Editor Window Header -->
+  <rect x="10" y="8" width="100" height="18" rx="14" fill="#031c15" />
+  <rect x="10" y="20" width="100" height="6" fill="#031c15" />
+  <circle cx="20" cy="17" r="2.5" fill="#ef4444" />
+  <circle cx="28" cy="17" r="2.5" fill="#f59e0b" />
+  <circle cx="36" cy="17" r="2.5" fill="#10b981" />
+
+  <!-- Code Brackets & Slash -->
+  <path d="M42 36 L32 49 L42 62" stroke="#34d399" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M78 36 L88 49 L78 62" stroke="#34d399" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M64 33 L54 65" stroke="url(#gold-spark)" stroke-width="3.5" stroke-linecap="round" />
+
+  <!-- Glow Sparkle -->
+  <circle cx="94" cy="28" r="2" fill="#34d399" />
+  <circle cx="26" cy="68" r="1.5" fill="#f59e0b" />
+</svg>

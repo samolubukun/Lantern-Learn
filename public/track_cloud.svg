@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 90" fill="none">
+  <defs>
+    <linearGradient id="bg-cloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#042f2e" />
+      <stop offset="60%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#022c22" />
+    </linearGradient>
+    <linearGradient id="border-cloud" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="hex-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow-cloud" x="-10%" y="-10%" width="120%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#022c22" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Base Badge Card -->
+  <rect x="10" y="8" width="100" height="74" rx="14" fill="url(#bg-cloud)" stroke="url(#border-cloud)" stroke-width="2" filter="url(#shadow-cloud)" />
+
+  <!-- Cloud Contour in Background -->
+  <path d="M40 48 A 12 12 0 0 1 60 40 A 16 16 0 0 1 84 46 A 11 11 0 0 1 80 62 L 40 62 A 10 10 0 0 1 40 48 Z" fill="#065f46" opacity="0.4" />
+
+  <!-- Connected Hexagons (Cluster Architecture) -->
+  <!-- Top Node -->
+  <polygon points="60,20 70,26 70,38 60,44 50,38 50,26" fill="#047857" stroke="#34d399" stroke-width="1.8" />
+  <circle cx="60" cy="32" r="3" fill="#a7f3d0" />
+
+  <!-- Bottom Left Node -->
+  <polygon points="40,48 50,54 50,66 40,72 30,66 30,54" fill="#047857" stroke="#38bdf8" stroke-width="1.8" />
+  <circle cx="40" cy="60" r="3" fill="#bae6fd" />
+
+  <!-- Bottom Right Node -->
+  <polygon points="80,48 90,54 90,66 80,72 70,66 70,54" fill="#047857" stroke="#38bdf8" stroke-width="1.8" />
+  <circle cx="80" cy="60" r="3" fill="#bae6fd" />
+
+  <!-- Interconnect Beams -->
+  <line x1="55" y1="41" x2="45" y2="51" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="2 2" />
+  <line x1="65" y1="41" x2="75" y2="51" stroke="#6ee7b7" stroke-width="2" stroke-dasharray="2 2" />
+  <line x1="50" y1="60" x2="70" y2="60" stroke="#38bdf8" stroke-width="2" />
+
+  <!-- High Availability Pulse Spark -->
+  <circle cx="60" cy="46" r="2.5" fill="#fef08a" />
+</svg>
